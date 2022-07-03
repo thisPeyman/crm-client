@@ -1,0 +1,25 @@
+<main
+  style="background-image: url(assets/background/moon-background.svg)"
+  class="bg-cover w-screen h-screen flex items-center justify-center"
+  *ngIf="!isDeviceMobile; else mobileDevice"
+>
+  <div class="w-2/3 h-2/3 bg-gray-50 rounded shadow-lg grid grid-cols-3">
+    <div class="col-span-2">
+      <router-outlet></router-outlet>
+    </div>
+    <div>
+      <app-side-info></app-side-info>
+    </div>
+  </div>
+</main>
+
+<ng-template #mobileDevice>
+  <div class="container mx-auto text-center py-20">
+    <a class="text-2xl font-bold" routerLink="/">Crmlux</a>
+    <p class="mt-2">
+      Sorry! App is not Available on mobile devices. <br />
+      You can continue using Crmlux on desktop until official mobile app is
+      released.
+    </p>
+  </div>
+</ng-template>

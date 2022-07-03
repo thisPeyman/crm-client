@@ -1,0 +1,12 @@
+<div class="form-control w-full max-w-xs mx-auto">
+  <label class="label">
+    <span class="label-text text-gray-500">{{ hint }}</span>
+  </label>
+  <input
+    [formControl]="control"
+    [type]="type"
+    [placeholder]="placeholder"
+    class="input input-bordered {{ className }}"
+    [class.input-error]="showError"
+  />
+</div>

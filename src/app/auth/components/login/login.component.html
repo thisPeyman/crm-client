@@ -1,0 +1,22 @@
+<div class="text-center p-10 h-full">
+  <h1 class="text-lg">We're happy to have you back!</h1>
+  <div class="mt-10 flex gap-4 flex-col">
+    <app-input
+      [control]="getForm('username')"
+      placeholder="Email "
+      hint="What is your email?"
+    ></app-input>
+    <app-input
+      [control]="getForm('password')"
+      placeholder="Password "
+      hint="Yout password goes here"
+      type="password"
+    ></app-input>
+
+    <button class="btn btn-wide btn-primary mx-auto mt-5">Login</button>
+    <p class="py-4 text-gray-600 text-base">
+      Don't have an account?
+      <a routerLink="/auth/register" class="link">Signup instead</a>
+    </p>
+  </div>
+</div>

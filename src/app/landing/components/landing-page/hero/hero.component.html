@@ -1,0 +1,68 @@
+<section
+  style="
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(assets/work-man.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  "
+  class="relative py-5 min-h-screen"
+>
+  <div class="container mx-auto flex flex-col">
+    <h1
+      class="text-2xl md:text-4xl lg:text-5xl text-center font-light pt-12 pb-7 leading-10 order-first"
+    >
+      A CRM that you can use
+      <span class="block font-bold md:pt-3">To save your Customers</span>
+    </h1>
+    <div class="text-center py-5 flex flex-col items-center justify-center">
+      <app-input
+        [control]="email"
+        type="email"
+        placeholder="Enter your work email"
+        className="text-center"
+      ></app-input>
+      <button class="btn btn-wide btn-primary my-4">Get Started</button>
+      <p class="text-sm text-gray-600">
+        No credit card needed ✦ Unlimited time on Free plan
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 my-7 md:-order-2 w-4/5 mx-auto"
+    >
+      <div
+        class="w-36 h-36 text-center border-2 border-gray-300 bg-gray-50 bg-opacity-70 hover:bg-opacity-90 transition mx-auto rounded-2xl shadow flex items-center justify-center flex-col"
+      >
+        <img
+          class="w-1/2 text-gray-400 opacity-60 py-3"
+          src="assets/icons/sales.svg"
+          alt="Sales"
+        />
+        <h3 class="text-xl font-light text-gray-600">Sales</h3>
+      </div>
+      <div
+        class="w-36 h-36 text-center border-2 border-gray-300 bg-gray-50 bg-opacity-70 hover:bg-opacity-90 transition mx-auto rounded-2xl shadow flex items-center justify-center flex-col"
+      >
+        <img
+          class="w-1/2 text-gray-400 opacity-60 py-3"
+          src="assets/icons/marketing.svg"
+          alt="Sales"
+        />
+        <h3 class="text-xl font-light text-gray-600">Marketing</h3>
+      </div>
+      <div
+        class="w-36 h-36 text-center border-2 border-gray-300 bg-gray-50 bg-opacity-70 hover:bg-opacity-90 transition mx-auto rounded-2xl shadow flex items-center justify-center flex-col"
+      >
+        <img
+          class="w-1/2 text-gray-400 opacity-60 py-3"
+          src="assets/icons/business.svg"
+          alt="Sales"
+        />
+        <h3 class="text-xl font-light text-gray-600">Teams</h3>
+      </div>
+    </div>
+  </div>
+</section>
