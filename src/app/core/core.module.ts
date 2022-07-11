@@ -18,6 +18,5 @@ import { LocalStorageService } from './services/local-storage.service';
       logOnly: environment.production,
     }),
   ],
-  providers: [MobileDetectService, LocalStorageService],
 })
 export class CoreModule {}
